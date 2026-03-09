@@ -1,0 +1,14 @@
+int bouton = 2;
+int led = 13;
+bool etatLed = false; // Variable pour garder l'état
+void setup() {
+  pinMode(bouton, INPUT);
+  pinMode(led, OUTPUT);
+}
+void loop() {
+  if (digitalRead(bouton) == HIGH) {
+    etatLed = !etatLed; // Inversion de l'état (true devient false et inversement)
+    delay(300); // Pause pour éviter plusieurs changements en un seul appui
+  }
+  digitalWrite(led, etatLed);
+}
