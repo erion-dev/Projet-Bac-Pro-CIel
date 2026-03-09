@@ -1,0 +1,26 @@
+int bouton = 2;
+int led = 13;
+
+bool etatLed = false;        // Mémoire de l'état de la LED
+int etatBouton = 0;          // État actuel du bouton
+int ancienEtatBouton = 0;    // État précédent du bouton
+
+void setup() {
+  pinMode(bouton, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+
+  etatBouton = digitalRead(bouton); // Lire l'état du bouton
+
+  // Détection d'un nouvel appui
+  if (etatBouton == HIGH && ancienEtatBouton == LOW) {
+    etatLed = !etatLed;  // Inverser l'état de la LED
+    delay(50);           // Anti-rebond simple
+  }
+
+  ancienEtatBouton = etatBouton; // Sauvegarde pour la prochaine boucle
+
+  digitalWrite(led, etatLed); // Appliquer l'état à la LED
+}
