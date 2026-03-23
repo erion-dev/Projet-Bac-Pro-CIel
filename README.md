@@ -273,3 +273,6 @@ publier un projet sur GitHub
 enregistrer différentes versions d’un programme
 
 Ces compétences sont très utilisées dans les métiers de l’informatique et dans les études en BTS SIO. 🚀
+<img width="613" height="723" alt="3" src="https://github.com/user-attachments/assets/69663300-cb30-4979-8cb9-1473387bdea8" />
+<img width="894" height="664" alt="2" src="https://github.com/user-attachments/assets/7eb5cb41-3e1f-40cc-9d84-75967b0efc74" />
+<img width="855" height="607" alt="Capture" src="https://github.com/user-attachments/assets/2fb44a3a-2500-4523-96b7-4ec83f1a7a4b" />
